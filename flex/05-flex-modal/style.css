@@ -9,7 +9,6 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +19,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 20px;
+}
+
+.content-box {
+  display: flex;
+  gap: 10px;
 }
 
 .icon {
@@ -33,6 +38,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-modal {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .close-button {
@@ -46,6 +68,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttons {
+  margin-left: 50px;
 }
 
 button {
