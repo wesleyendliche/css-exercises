@@ -4,7 +4,38 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0 15px;
+}
+
+li a {
+  text-decoration: none;
+  color: #222222;
+}
+
+main {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -15,7 +46,14 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #eee;
+  background-color: #eee;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
 }
 
 input {
@@ -24,4 +62,9 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+footer {
+  background-color: #eeeeee;
+  height: 50px;
 }
